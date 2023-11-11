@@ -1,0 +1,16 @@
+﻿[bandeiras]
+Coordinates=10,212,62,51
+
+[RadioGroup1]
+Coordinates=243,10,79,51
+
+[]
+Coordinates=181,144,64,51
+Visible=True
+
+[btnVoltar]
+Coordinates=121,10,42,51
+
+[btnSalvar]
+Coordinates=264,144,44,51
+

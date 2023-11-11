@@ -1,0 +1,11 @@
+﻿[]
+Coordinates=10,10,64,51
+Visible=True
+
+[bandeiras]
+Coordinates=10,80,49,51
+Visible=True
+
+[btnJogar]
+Coordinates=93,10,53,51
+
