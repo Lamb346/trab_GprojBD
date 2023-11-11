@@ -1,0 +1,22 @@
+object dmConnection: TdmConnection
+  Height = 480
+  Width = 640
+  object fdConnection: TFDConnection
+    Left = 120
+    Top = 104
+  end
+  object fdDriver: TFDPhysFBDriverLink
+    Left = 240
+    Top = 104
+  end
+  object fdWaitCursor: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 456
+    Top = 104
+  end
+  object fdMysqlDriver: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\Program Files\MySQL\MySQL Server 8.0\lib\libmysql.dll'
+    Left = 336
+    Top = 104
+  end
+end

@@ -1,0 +1,26 @@
+object dmConnection: TdmConnection
+  Height = 480
+  Width = 640
+  object fdConnection: TFDConnection
+    Params.Strings = (
+      'Database=trabalho_de_banco'
+      'User_Name=root'
+      'Password=senha'
+      'Server=localhost'
+      'DriverID=MySQL')
+    Left = 120
+    Top = 104
+  end
+  object fdWaitCursor: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 368
+    Top = 104
+  end
+  object fdMysqlDriver: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Users\gioca\Desktop\trab_GprojBD-main\trab_GprojBD-main\Traba' +
+      'lho_GPBD\libmysql\libmysql.dll'
+    Left = 248
+    Top = 104
+  end
+end

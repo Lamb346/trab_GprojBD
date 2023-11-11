@@ -119,6 +119,11 @@
             <Form>frPadrao</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="udmConnection.pas">
+            <Form>dmConnection</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -145,7 +150,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="Win32\Debug\GuessTheWords.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="..\..\..\Trabalho de banco\out\GuessTheWords.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>GuessTheWords.exe</RemoteName>
                         <Overwrite>true</Overwrite>

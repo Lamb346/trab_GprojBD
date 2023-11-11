@@ -5,7 +5,8 @@ uses
   uPrincipal in 'uPrincipal.pas' {frPrincipal},
   uConfiguracao in 'uConfiguracao.pas' {frConfiguracao},
   uJogo in 'uJogo.pas' {frJogo},
-  uFormPadrao in 'uFormPadrao.pas' {frPadrao};
+  uFormPadrao in 'uFormPadrao.pas' {frPadrao},
+  udmConnection in 'udmConnection.pas' {dmConnection: TDataModule};
 
 {$R *.res}
 
@@ -16,5 +17,6 @@ begin
   Application.CreateForm(TfrConfiguracao, frConfiguracao);
   Application.CreateForm(TfrJogo, frJogo);
   Application.CreateForm(TfrPadrao, frPadrao);
+  Application.CreateForm(TdmConnection, dmConnection);
   Application.Run;
 end.
