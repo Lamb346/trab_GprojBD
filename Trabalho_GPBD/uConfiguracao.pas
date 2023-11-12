@@ -16,11 +16,13 @@ type
     btnCancelar: TButton;
     GroupBox3: TGroupBox;
     GroupBox4: TGroupBox;
-    radioDificuldade: TRadioGroup;
-    radioDicas: TRadioGroup;
-    editMinimo: TLabeledEdit;
-    editMaximo: TLabeledEdit;
     comboGenero: TDBComboBox;
+    editMinimo: TDBEdit;
+    editMaximo: TDBEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    DBRadioGroup1: TDBRadioGroup;
+    RadioGroup2: TRadioGroup;
     procedure btnVoltarClick(Sender: TObject);
   private
     { Private declarations }
@@ -34,6 +36,8 @@ var
 implementation
 
 {$R *.dfm}
+
+uses udmConnection;
 
 procedure TfrConfiguracao.btnVoltarClick(Sender: TObject);
 begin

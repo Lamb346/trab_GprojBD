@@ -2,6 +2,12 @@ object dmConnection: TdmConnection
   Height = 480
   Width = 640
   object FDConnection: TFDConnection
+    Params.Strings = (
+      'Database=trabalho_de_banco'
+      'User_Name=root'
+      'DriverID=MySQL'
+      'UseSSL=False')
+    LoginPrompt = False
     Left = 152
     Top = 120
   end
@@ -16,5 +22,10 @@ object dmConnection: TdmConnection
     Provider = 'Forms'
     Left = 440
     Top = 120
+  end
+  object tabPalavrasIngles: TFDTable
+    Connection = FDConnection
+    Left = 152
+    Top = 232
   end
 end

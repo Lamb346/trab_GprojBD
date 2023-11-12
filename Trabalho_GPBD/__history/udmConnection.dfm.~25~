@@ -30,8 +30,6 @@ object dmConnection: TdmConnection
   end
   object getConfiguracoes: TFDQuery
     Connection = FDConnection
-    SQL.Strings = (
-      'SELECT * FROM CONFIGURACOES')
     Left = 48
     Top = 112
   end

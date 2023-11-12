@@ -7,32 +7,29 @@ object dmConnection: TdmConnection
       'User_Name=root'
       'DriverID=MySQL')
     Connected = True
-    LoginPrompt = False
-    Left = 48
-    Top = 24
+    Left = 152
+    Top = 120
   end
   object FDPhysMySQLDriverLink: TFDPhysMySQLDriverLink
     VendorLib = 
       'C:\Users\gioca\Desktop\trab_GprojBD\Trabalho_GPBD\libmysql\libmy' +
       'sql.dll'
-    Left = 192
-    Top = 24
+    Left = 296
+    Top = 120
   end
   object FDGUIxWaitCursor: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 336
-    Top = 24
+    Left = 440
+    Top = 120
   end
-  object dsConfiguracoes: TDataSource
-    DataSet = getConfiguracoes
-    Left = 192
-    Top = 112
-  end
-  object getConfiguracoes: TFDQuery
+  object tabPalavrasIngles: TFDTable
     Connection = FDConnection
-    SQL.Strings = (
-      'SELECT * FROM CONFIGURACOES')
-    Left = 48
-    Top = 112
+    Left = 152
+    Top = 232
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection
+    Left = 296
+    Top = 232
   end
 end

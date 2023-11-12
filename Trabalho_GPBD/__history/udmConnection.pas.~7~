@@ -11,10 +11,9 @@ uses
 
 type
   TdmConnection = class(TDataModule)
-    fdConnection: TFDConnection;
-    fdDriver: TFDPhysFBDriverLink;
-    fdWaitCursor: TFDGUIxWaitCursor;
-    fdMysqlDriver: TFDPhysMySQLDriverLink;
+    FDConnection: TFDConnection;
+    FDPhysMySQLDriverLink: TFDPhysMySQLDriverLink;
+    FDGUIxWaitCursor: TFDGUIxWaitCursor;
   private
     { Private declarations }
   public

@@ -24,14 +24,11 @@ object dmConnection: TdmConnection
     Top = 24
   end
   object dsConfiguracoes: TDataSource
-    DataSet = getConfiguracoes
     Left = 192
     Top = 112
   end
   object getConfiguracoes: TFDQuery
     Connection = FDConnection
-    SQL.Strings = (
-      'SELECT * FROM CONFIGURACOES')
     Left = 48
     Top = 112
   end

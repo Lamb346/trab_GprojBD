@@ -7,14 +7,17 @@ uses
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
   Data.DB, FireDAC.Comp.Client, FireDAC.Phys.FBDef, FireDAC.Phys.MySQLDef,
-  FireDAC.Phys.MySQL, FireDAC.Comp.UI, FireDAC.Phys.IBBase, FireDAC.Phys.FB;
+  FireDAC.Phys.MySQL, FireDAC.Comp.UI, FireDAC.Phys.IBBase, FireDAC.Phys.FB,
+  FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt,
+  FireDAC.Comp.DataSet;
 
 type
   TdmConnection = class(TDataModule)
-    fdConnection: TFDConnection;
-    fdDriver: TFDPhysFBDriverLink;
-    fdWaitCursor: TFDGUIxWaitCursor;
-    fdMysqlDriver: TFDPhysMySQLDriverLink;
+    FDConnection: TFDConnection;
+    FDPhysMySQLDriverLink: TFDPhysMySQLDriverLink;
+    FDGUIxWaitCursor: TFDGUIxWaitCursor;
+    DataSource1: TDataSource;
+    getConfiguracoes: TFDQuery;
   private
     { Private declarations }
   public

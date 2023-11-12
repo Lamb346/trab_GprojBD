@@ -2,13 +2,18 @@ object dmConnection: TdmConnection
   Height = 480
   Width = 640
   object FDConnection: TFDConnection
+    Params.Strings = (
+      'Database=trabalho_de_banco'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
     Left = 152
     Top = 120
   end
   object FDPhysMySQLDriverLink: TFDPhysMySQLDriverLink
     VendorLib = 
-      'C:\Users\gioca\Desktop\trab_GprojBD-main\trab_GprojBD-main\Traba' +
-      'lho_GPBD\libmysql\libmysql.dll'
+      'C:\Users\gioca\Desktop\trab_GprojBD\Trabalho_GPBD\libmysql\libmy' +
+      'sql.dll'
     Left = 296
     Top = 120
   end

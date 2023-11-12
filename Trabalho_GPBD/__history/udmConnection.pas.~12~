@@ -16,8 +16,6 @@ type
     FDConnection: TFDConnection;
     FDPhysMySQLDriverLink: TFDPhysMySQLDriverLink;
     FDGUIxWaitCursor: TFDGUIxWaitCursor;
-    dsConfiguracoes: TDataSource;
-    getConfiguracoes: TFDQuery;
   private
     { Private declarations }
   public

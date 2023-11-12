@@ -7566,29 +7566,37 @@ object frConfiguracao: TfrConfiguracao
       Caption = 'Quantidade de letras na palavra'
       ParentColor = False
       TabOrder = 1
-      object editMinimo: TLabeledEdit
-        Left = 36
-        Top = 56
-        Width = 81
-        Height = 23
-        EditLabel.Width = 42
-        EditLabel.Height = 15
-        EditLabel.Caption = 'M'#237'nimo'
-        MaxLength = 2
-        TabOrder = 0
-        Text = ''
+      object Label1: TLabel
+        Left = 40
+        Top = 38
+        Width = 42
+        Height = 15
+        Caption = 'M'#237'nimo'
       end
-      object editMaximo: TLabeledEdit
-        Left = 180
+      object Label2: TLabel
+        Left = 184
+        Top = 38
+        Width = 44
+        Height = 15
+        Caption = 'M'#225'ximo'
+      end
+      object editMinimo: TDBEdit
+        Left = 40
         Top = 56
-        Width = 81
+        Width = 73
         Height = 23
-        EditLabel.Width = 44
-        EditLabel.Height = 15
-        EditLabel.Caption = 'M'#225'ximo'
-        MaxLength = 2
+        DataField = 'PALAVRA_MIN'
+        DataSource = dmConnection.dsConfiguracoes
+        TabOrder = 0
+      end
+      object editMaximo: TDBEdit
+        Left = 184
+        Top = 56
+        Width = 73
+        Height = 23
+        DataField = 'PALAVRA_MAX'
+        DataSource = dmConnection.dsConfiguracoes
         TabOrder = 1
-        Text = ''
       end
     end
     object GroupBox4: TGroupBox
@@ -7604,32 +7612,34 @@ object frConfiguracao: TfrConfiguracao
         Top = 54
         Width = 225
         Height = 23
+        DataField = 'ID_GENERO'
+        DataSource = dmConnection.dsConfiguracoes
         TabOrder = 0
       end
     end
-    object radioDificuldade: TRadioGroup
+    object DBRadioGroup1: TDBRadioGroup
       Left = 88
-      Top = 65
+      Top = 257
       Width = 297
-      Height = 121
+      Height = 120
+      Caption = 'Dicas'
+      DataField = 'DICAS'
+      DataSource = dmConnection.dsConfiguracoes
+      Items.Strings = (
+        'Ativadas'
+        'Desativadas')
+      TabOrder = 3
+    end
+    object RadioGroup2: TRadioGroup
+      Left = 88
+      Top = 66
+      Width = 297
+      Height = 120
       Caption = 'Dificuldade'
       Items.Strings = (
         'F'#225'cil'
         'M'#233'dio'
         'Dif'#237'cil')
-      ParentColor = False
-      TabOrder = 3
-    end
-    object radioDicas: TRadioGroup
-      Left = 88
-      Top = 256
-      Width = 297
-      Height = 121
-      Caption = 'Dicas'
-      Items.Strings = (
-        'Ativadas'
-        'Desativadas')
-      ParentColor = False
       TabOrder = 4
     end
   end
