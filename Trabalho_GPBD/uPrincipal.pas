@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.StdCtrls, Vcl.ExtCtrls,
-  Vcl.Imaging.jpeg, Vcl.Menus, uFormPadrao, uConfiguracao, uJogo;
+  Vcl.Imaging.jpeg, Vcl.Menus, uFormPadrao, uConfiguracao, uJogo, uEstatisticas;
 
 type
   TfrPrincipal = class(TfrPadrao)
@@ -19,6 +19,7 @@ type
     procedure btnConfigClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure btnJogarClick(Sender: TObject);
+    procedure btnEstatisticasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,6 +54,19 @@ begin
     frJogo.ShowModal;
   finally
     frJogo.Free;
+  end;
+
+end;
+
+procedure TfrPrincipal.btnEstatisticasClick(Sender: TObject);
+var
+  frEstatisticas: TfrEstatisticas;
+begin
+  frEstatisticas := TfrEstatisticas.Create(Application);
+  try
+    frEstatisticas.ShowModal;
+  finally
+    frEstatisticas.Free;
   end;
 
 end;
